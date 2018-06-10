@@ -38,6 +38,130 @@ body
 b, strong
 	font-weight: bold
 
+button
+	background: $accent
+	&:active
+		background-color: #ff9600
+
+.header
+	height: 100vh
+	height: 1185px
+	background-position-y: 85px
+	background-position-x: center
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	width: 100%
+	font-size: 28px
+	font-weight: 300
+	text-transform: uppercase
+	.top-line
+		// display: flex
+		height: 85px
+		padding-top: 20px
+		.logo
+			// position: absolute
+			height: 120px
+			// margin-top: 20px
+		.timer
+			// width: 100%
+	.form
+		height: 1100px
+		color: white
+		font-size: 27.5px
+		form
+			font-size: 24px
+			position: relative
+			display: flex
+			flex-flow: row wrap
+			justify-content: space-between
+			input, button
+				text-transform: uppercase
+				width: calc(50% - 7.5px)
+				margin-bottom: 10px
+				padding: 0 20px 
+				height: 50px
+				color: #040404
+			button
+				color: #ffffff
+				border: 0
+			.checkbox
+				width: 100%
+				font-size: 28px
+				text-align: left
+				input[type="checkbox"]
+					height: 25px
+					width: 25px
+				label
+					margin-left: 25px
+					text-transform: none
+
+		.h2
+			font-size: 71px
+			text-align-last: center
+			font-weight: 900
+		.align-right
+			text-align: right
+		.special-offer
+			background-color: $accent
+			border-radius: 50%
+			width: 210px
+			height: 210px
+			position: absolute
+			bottom: 0
+			transform: translate(45px, 30%)
+			right: 0
+			> p
+				text-transform: none
+				font-weight: 900
+				width: 210px
+				font-size: 16px
+				position: absolute
+				text-align: center
+				left: 50%
+				top: 50%
+				transform: translateX(-50%)
+				transform: translate(-50%,-50%)
+				> span
+					display: block
+.advantages
+	&-header
+		text-transform: uppercase
+		text-align: center
+		margin: 90px 0
+		position: relative
+		line-height: 1
+		letter-spacing: 0.20px
+		font-size: 24px
+		font-weight: 300
+		&:after
+			content: " "
+			bottom: -34px
+			left: 50%
+			width: 93px
+			height: 2px
+			background-color: $accent2
+			position: absolute
+			transform: translateX(-50%)
+	&-list
+		position: relative
+		transform: translateX(15px)
+		font-weight: 300
+		&:before
+			content: ""
+			position: absolute
+			border: 2px solid $accent2
+			// width: 600px
+			width: calc(100% + 70px)
+			height: calc(100% + 75px)
+			// top: 50%
+			// left: 50%
+			// transform: translate(-50%, -50%)
+			transform: translate(-12px, -6px)
+	&-img
+		transform: translate(-10px, 70px)
+		margin-bottom: 60px
+		
 
 
 @import "media" // Always at the end
