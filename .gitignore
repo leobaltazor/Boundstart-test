@@ -3,6 +3,7 @@
 /.git/
 /.vscode/
 /app/css/
+/app/js/scripts.min.js/
 /**/_backstage
 /**/package-lock.json
 /**/Thumbs.db
