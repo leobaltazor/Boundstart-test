@@ -85,7 +85,7 @@ gulp.task("img", function() {
     .pipe(gulp.dest("build/img")); // Выгружаем на продакшен
 });
 
-gulp.task("build", ["removedist", "styles", "js", "img"], function() {
+gulp.task("build", ["clearcache", "removedist", "styles", "js", "img"], function() {
   var buildFiles = gulp.src(["app/*.html"]).pipe(gulp.dest("build"));
 
   var buildCss = gulp
