@@ -1,6 +1,10 @@
 @import "vars"
 @import "fonts"
 @import "libs"
+@import "./fa/fontawesome.scss"
+@import "./fa/fa-brands.scss"
+@import "./fa/fa-solid.scss"
+@import "./fa/fa-regular.scss"
 
 ::placeholder
 	color: #666
@@ -85,6 +89,7 @@ button
 			button
 				color: #ffffff
 				border: 0
+				box-shadow: 0px 0px 21px 3px rgba(0,0,0,1);
 			.checkbox
 				width: 100%
 				font-size: 28px
@@ -147,6 +152,8 @@ button
 		position: relative
 		transform: translateX(15px)
 		font-weight: 300
+		.mob
+			display: none
 		&:before
 			content: ""
 			position: absolute
@@ -161,6 +168,8 @@ button
 	&-img
 		transform: translate(-10px, 70px)
 		margin-bottom: 60px
+		img
+			width: 100%
 
 .types-of-training
 	background-color: $accent2
@@ -223,6 +232,7 @@ button
 		padding: 8px 55px
 		background-color: #0a0a0a
 		height: 32px
+		box-shadow: 0px 0px 21px 3px rgba(0,0,0,0.17);
 
 .smart-training
 	background-color: #f1f1f1
@@ -238,7 +248,6 @@ button
 
 	.smart-advantages
 		text-align: center
-		width: 100%
 		&-item
 			margin: 0 auto
 			width: 250px
@@ -313,8 +322,95 @@ button
 		opacity: 0.29
 
 .review
+	background-size: cover
 	position: relative
-	height: 678px
+	min-height: 678px
+	&s
+		padding: 55px
+		background-color: #fff
+	.stars
+		text-align: center
+		font-size: 35px
+		color: #ffffff
+		margin: 85px 0 55px
+		line-height: 1
+	&-stars
+		.stars
+			text-align: left
+			color: #999
+			font-size: 25px
+			margin-top: 23px
+			padding-bottom: 25px
+			border-bottom: 1px solid #eee
+			color: #e7711b
+			span
+				color: #999
+	&-item
+		padding-left: 47px
+		position: relative
+		padding-bottom: 60px
+		overflow: auto
+		&-avatar
+			position: absolute
+			width: 40px
+			height: 40px
+			background-color: purple
+			left: 0
+			top: 0
+			border-radius: 50%
+			text-align: center
+			color: #eee
+			font-size: 23px
+		&-head
+			font-weight: bold
+			text-decoration: solid
+		&-text
+			font-size: 13px
+		&-star
+			font-size: 13px
+			color: #e7711b
+			span
+				color: #999
+				margin-left: 10px
+	&-head
+		font-size: 24px
+	&-adress
+		font-size: 14px
+		color: #999
+
+
+
+
+.map
+	height: 630px
+
+.last-chance
+	padding: 90px 0
+	text-align: center
+	font-weight: 900
+	text-transform: uppercase
+	.text
+		font-size: 40px
+		margin-bottom: 25px
+	.button
+		font-size: 16px
+		font-weight: 300
+		color: #000
+		padding: 10px 55px 7px
+		line-height: 1
+		background-color: $accent
+		display: inline-block
+		text-decoration: none
+		box-shadow: 0px 0px 21px 3px rgba(0,0,0,0.17);
+
+
+.footer
+	text-align: center
+	background-color: #1f1f1f
+	color: #ffffff
+	font-size: 14px
+	font-family: OpenSans-Light
+
 
 
 @import "media" // Always at the end

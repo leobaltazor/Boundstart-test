@@ -5,17 +5,316 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
-
+	.header
+		height: 576px
+		.form
+			height: 730px
+			font-size: 16px
+			flex-flow: row wrap
+			form
+				input, button
+					// width: 100%
+			.special-offer
+				display: none
+			.h2
+				font-size: 32px
+			.checkbox
+				color: #000000
+				label
+					text-shadow: 0px 0px 21px rgba(150, 150, 150, 1);
 // ≥992px
 +media-breakpoint-down(md)
+	.specialists
+		.specialist
+			margin-bottom: 50px
+	.smart-training
+		.smart-advantages
+			&-description
+				p
+					margin-bottom: 50px
+	.header
+		height: 576px
+		.form
+			height: 730px
+			font-size: 16px
+			flex-flow: row wrap
+			form
+				input, button
+					width: 100%
+			.special-offer
+				display: none
+			.h2
+				font-size: 32px
+			.align-right
+				text-align: center
+			.checkbox
+				color: #000000
 
 // ≥768px
 +media-breakpoint-down(sm)
+	.header
+		height: 576px
+		text-align: center
+		.logo
+			position: absolute
+			top: 100px
+			img
+				width: 50%
+		.form
+			height: 730px
+			font-size: 16px
+			flex-flow: row wrap
+			form
+				input, button
+					width: 100%
+			.special-offer
+				display: none
+			.h2
+				font-size: 32px
+			.align-right
+				text-align: center
+			.checkbox
+				color: #000000
+	.advantages
+		&-header
+			display: none
+		&-list
+			margin: 90px 0 0
+			position: relative
+			transform: translateX(0)
+			font-weight: 300
+			ul
+				list-style: none
+				margin: 0
+				padding: 0
+				li
+					margin-top: 40px
+			.mob
+				font-weight: 900
+				text-transform: uppercase
+				display: block
+			&:before
+				display: none
+		&-img
+			margin-top: 20px
+			transform: translate(0, 0)
+			margin-bottom: 60px
+	.smart-training
+		.smart-advantages
+			&-description
+				p
+					margin-bottom: 50px
+	.specialists
+		padding-bottom: 0
+		.specialist
+			margin-bottom: 50px
+		.h4
+			margin-top: 50px
+		p
+			margin-bottom: 50px
+	.review
+		min-height: 678px
+		&s
+			padding: 15px
+		&-item
+			padding-bottom: 30px
+
+	.types-of-training
+		background-color: $accent2
+		margin-top: 75px
+		height: 100%
+		padding: 55px 0
+		.carousel
+			display: block
+			width: 480px
+			height: 440px
+			position: relative
+			img
+				position: absolute
+				width: 100%
+				height: 100%
+				object-fit: cover
+		&-header
+			text-transform: uppercase
+			font-size: 24px
+			letter-spacing: 0.2px
+			font-weight: 300
+			color: #000
+			margin-top: 50px
+		ul
+			list-style: none
+			padding: 0
+			margin: 0 0 0 30px
+			margin-bottom: 30px
+			a
+				font-family: Roboto
+				color:  #1f1f1f
+				font-size: 17px
+				font-weight: 300
+				letter-spacing: 0.2px
+				text-decoration: none
+				&.active
+					position: relative
+					&:before
+						color: $accent
+						position: absolute
+						content: "\25cf"
+						left: -24px
+						top: 0
+						font-size: 17px
+						line-height: 1
+		.but
+			text-align: center
+		.button
+			display: inline-block
+			text-decoration: none
+			color: #fff
+			font-weight: 16px
+			text-transform: uppercase
+			font-weight: 300
+			line-height: 1
+			padding: 8px 55px
+			background-color: #0a0a0a
+			height: 32px
+			box-shadow: 0px 0px 21px 3px rgba(0,0,0,0.17);
+
+	.smart-training
+		p
+			margin: 70px 0 45px
+			font-size: 20px
 
 // ≥576px
 +media-breakpoint-down(xs)
+	.header
+		height: 576px
+		text-align: center
+		.logo
+			position: absolute
+			top: 100px
+			img
+				width: 50%
+		.form
+			height: 730px
+			font-size: 16px
+			flex-flow: row wrap
+			form
+				input, button
+					width: 100%
+			.special-offer
+				display: none
+			.h2
+				font-size: 32px
+			.align-right
+				text-align: center
+			.checkbox
+				color: #000000
+	.advantages
+		&-header
+			display: none
+		&-list
+			margin: 90px 0 0
+			position: relative
+			transform: translateX(0)
+			font-weight: 300
+			ul
+				list-style: none
+				margin: 0
+				padding: 0
+				li
+					margin-top: 40px
+			.mob
+				font-weight: 900
+				text-transform: uppercase
+				display: block
+			&:before
+				display: none
+		&-img
+			margin-top: 20px
+			transform: translate(0, 0)
+			margin-bottom: 60px
+	.smart-training
+		.smart-advantages
+			&-description
+				p
+					margin-bottom: 50px
+	.specialists
+		padding-bottom: 0
+		.specialist
+			margin-bottom: 50px
+		.h4
+			margin-top: 50px
+		p
+			margin-bottom: 50px
+	.review
+		min-height: 678px
+		&s
+			padding: 15px
+		&-item
+			padding-bottom: 30px
 
+	.types-of-training
+		background-color: $accent2
+		margin-top: 75px
+		height: 100%
+		padding: 55px 0
+		.carousel
+			display: block
+			width: 480px
+			height: 440px
+			position: relative
+			img
+				position: absolute
+				width: 100%
+				height: 100%
+				object-fit: cover
+		&-header
+			text-transform: uppercase
+			font-size: 24px
+			letter-spacing: 0.2px
+			font-weight: 300
+			color: #000
+			margin-top: 50px
+		ul
+			list-style: none
+			padding: 0
+			margin: 0 0 0 30px
+			margin-bottom: 30px
+			a
+				font-family: Roboto
+				color:  #1f1f1f
+				font-size: 17px
+				font-weight: 300
+				letter-spacing: 0.2px
+				text-decoration: none
+				&.active
+					position: relative
+					&:before
+						color: $accent
+						position: absolute
+						content: "\25cf"
+						left: -24px
+						top: 0
+						font-size: 17px
+						line-height: 1
+		.but
+			text-align: center
+		.button
+			display: inline-block
+			text-decoration: none
+			color: #fff
+			font-weight: 16px
+			text-transform: uppercase
+			font-weight: 300
+			line-height: 1
+			padding: 8px 55px
+			background-color: #0a0a0a
+			height: 32px
+			box-shadow: 0px 0px 21px 3px rgba(0,0,0,0.17);
 
+	.smart-training
+		p
+			margin: 70px 0 45px
+			font-size: 20px
 /*==========  Mobile First  ==========*/
 
 // ≤576px
